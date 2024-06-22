@@ -1,0 +1,5 @@
+baseURL = 'https://blog.loopercorp.com/'
+languageCode = 'en-us'
+title = 'looper'
+
+publishDir = "../apps/nginx/html"

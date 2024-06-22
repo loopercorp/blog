@@ -1,0 +1,4 @@
+*.sublime-workspace
+*.lock
+public/
+resources/
