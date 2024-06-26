@@ -1,0 +1,2 @@
+baseURL = 'http://blog.loopercorp.com:82/'
+publishDir = "../.bin/nginx/html/blog"

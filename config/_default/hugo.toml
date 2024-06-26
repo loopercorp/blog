@@ -1,5 +1,3 @@
 baseURL = 'https://blog.loopercorp.com/'
 languageCode = 'en-us'
 title = 'looper'
-
-publishDir = "../.bin/nginx/html/blog"
