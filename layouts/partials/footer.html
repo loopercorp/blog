@@ -1,1 +1,3 @@
-<footer>footer</footer>
+{{ with .Site.Copyright }}
+  <span>{{ . }}</span>
+{{ end }}

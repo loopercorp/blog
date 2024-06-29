@@ -1,3 +1,4 @@
 baseURL = 'https://blog.loopercorp.com/'
 languageCode = 'en-us'
 title = 'looper'
+copyright = "© 2024 Looper"

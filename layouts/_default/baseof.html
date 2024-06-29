@@ -9,21 +9,16 @@
   <title>{{ .Title }}</title>
 </head>
 <body>
-  {{ block "header" . }}
-    <header>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/posts">Posts</a>
-        <a href="/about">About</a>
-      </nav>
-      <h1>Looper's Blog</h1>
-    </header>
-  {{ end }}
+  <header>
+    {{ partial "header.html" . }}
+  </header>
 
-  {{ block "main" . }}
-  {{ end }}
+  <main aria-role="main">
+    {{ block "main" . }}{{ end }}
+  </main>
 
-  {{ block "footer" . }}
-  {{ end }}
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
 </body>
 </html>

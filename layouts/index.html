@@ -1,28 +1,11 @@
-{{ define "header" }}
-  <header>
-    <nav>
-      <a href="">Home</a>
-      <a href="posts">Posts</a>
-      <a href="about">About</a>
-    </nav>
-    <h1>Looper's Blog</h1>
-  </header>
-{{ end }}
-
 {{ define "main" }}
-  <main aria-role="main">
-    <header class="homepage-header">
-      <h1>{{ .Title }}</h1>
-    </header>
+  <div class="homepage-content">
+    {{ .Content }}
+  </div>
 
-    <div class="homepage-content">
-      {{ .Content }}
-    </div>
-
-    <div>
-      {{ range first 10 .Site.RegularPages }}
-        {{ .Render "summary" }}
-      {{ end }}
-    </div>
-  </main>
+  <div>
+    {{ range first 10 .Site.RegularPages }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </div>
 {{ end }}
